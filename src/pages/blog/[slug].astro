@@ -1,0 +1,17 @@
+---
+import { Markdown } from 'astro:markdown';
+import { getCollection } from 'astro:content';
+
+const { slug } = Astro.params;
+const posts = await getCollection('posts');
+const post = posts.find((p) => p.slug === slug);
+
+if (!post) {
+  throw new Error('Post not found');
+}
+
+---
+
+<BlogLayout>
+  <BlogPost post={post} />
+</BlogLayout>
