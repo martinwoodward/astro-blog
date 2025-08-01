@@ -13,8 +13,16 @@
     "blog",
     "static-site"
   ],
-  "author": "Your Name",
+  "author": "Martin Woodward <martinwoodward@github.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martinwoodward/astro-blog.git"
+  },
+  "homepage": "https://github.com/martinwoodward/astro-blog#readme",
+  "bugs": {
+    "url": "https://github.com/martinwoodward/astro-blog/issues"
+  },
   "dependencies": {
     "astro": "^1.0.0"
   },
